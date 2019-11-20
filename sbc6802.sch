@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 7400 7500 0    50   ~ 0
-SBC6802 w/Bus
+SBC6802 plus Bus
 $Comp
 L CPU_NXP_6800:MC6802 U1
 U 1 1 5DCD0FC1
@@ -1611,5 +1611,5 @@ Nov 14 2019\n
 Text Notes 10600 7650 0    50   ~ 0
 1.0
 Text Notes 7050 7050 0    50   ~ 0
-SBC6802 with SBC Bus Connector \n2019 ryu10\n* Derived from SBC6800/SBC6809 (c) 2017-2018 Tetsuya Suzuki\nCC-BY-SA 3.0
+SBC6802 with SBC Bus Connector \n2019 RyuStudio\n* Derived from SBC6800/SBC6809 (c) 2017-2018 Tetsuya Suzuki\nCC-BY-SA 3.0
 $EndSCHEMATC
