@@ -5,7 +5,7 @@ Rev. 1.0
 
 ![board1](graphics/sbc6802board1a.png)
 
-モトローラ 6802 を使用したシングルボードコンピュータです。電脳伝説様設計の SBC68 シリーズからの派生です。レトロな雰囲気様設計の SBC-Bus 2.0 に対応しており、電源も SBC-Bus に依存します。
+モトローラ 6802 を使用したシングルボードコンピュータです。電脳伝説様設計 SBC68 シリーズからの派生です。レトロな雰囲気様設計 SBC-Bus 2.0 対応のバスコネクタを装備しており、電源供給も SBC-Bus に依存します。
 
 * MPU6802（内蔵 RAM は無効化）
 * RAM 32KB（0x0000 - 0x7fff）
@@ -22,10 +22,10 @@ Rev. 1.0
 
 ## 参考リンク
 
-SBC6802 のメモリと ACIA アドレスは SBC6800 互換です。SBC6800 データパックに含まれる Mikbug やその他のソフトウェアが実行可能だと思います。
-
 * [SBC6800](https://www.switch-science.com/catalog/3581/)
 * [SBC6809](https://www.switch-science.com/catalog/3583/)
 * [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html)
 * [as0 Motorola 6800 Assembler](https://github.com/JimInCA/motorola-6800-assembler)
 * [M6800 Assembly VSCode Extension](https://marketplace.visualstudio.com/items?itemName=RyuStudio.m6800-as0)
+
+SBC6802 のメモリと ACIA アドレスは SBC6800 互換なので、SBC6800 データパックに含まれる Mikbug が実行可能です。未検証ですが、データパック内のその他のソフトウェアも実行可能だと思います。
