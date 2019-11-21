@@ -8,7 +8,9 @@ Rev. 1.0
 A single board computer with Motorola 6802. Compatible with SBC-Bus 2.0.
 The board design is derived from SBC6800 and SBC6809.
 
-* MC6802 (Internal RAM disabled)
+## Features
+
+* MC6802 1MHz (Internal RAM disabled)
 * RAM 32KB (0x0000 - 0x7fff)
 * ROM 16KB (0xc000 - 0xffff x ２ banks, selectable using JP1)
 * ACIA (0x8018/0x8019)
@@ -22,9 +24,17 @@ Some important files:
 * [Gerber](sbc6802_gerber_osh.zip)
 * [BOM](sbc6802_BOM.pdf)
 
-## References
+## SBC-Bus
 
-Most of the software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802. It is verified that MIKBUG.bin in the datapack runs on SBC6802.
+The SBC-Bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
+
+If not using SBC-Bus, connect the 5V/GND/Res pins to a separate power source.
+
+## Software
+
+Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802. It is verified that Mikbug.hex in SBC6800 datapack runs on SBC6802.
+
+## References
 
 * [SBC6800](https://www.switch-science.com/catalog/3581/)
 * [SBC6809](https://www.switch-science.com/catalog/3583/)
