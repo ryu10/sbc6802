@@ -14,7 +14,7 @@ Rev. 1.0
 
 本ボードの機能は以下の通りです。
 
-* MPU MC6802 1MHz（内蔵 RAM は無効）
+* MPU MC6802 1MHz（内蔵 RAM 無効）
 * RAM 32KB（0x0000 - 0x7fff）
 * ROM 16KB (0xc000 - 0xffff x ２ バンク、ジャンパ JP1 で選択)
 * ACIA（0x8018/0x8019）
@@ -28,7 +28,7 @@ Rev. 1.0
 * [Gerber](sbc6802_gerber_osh.zip)
 * [部品表](sbc6802_BOM.pdf)
 
-これ以外に、KiCAD プロジェクトがまるごとリポジトリに入っています。
+これ以外に、KiCAD プロジェクトがリポジトリに入っています。
 
 ## SBC-Bus
 
@@ -42,7 +42,7 @@ SBC-Bus 2.0 の標準ピンアサインから 1 か所だけ変更がありま�
 
 ## SBC6800 用ソフトウェアの使用
 
-SBC6802 のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug.hex をそのまま EEPROM に焼けば動作します。未検証ですが、データパック内のその他のソフトウェアもほぼすべて使用可能だと思います。
+SBC6802 のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug.hex をそのまま ROM に書き込めば動作します。未検証ですが、データパック内のその他のソフトウェアもほぼすべて使用可能だと思います。
 
 ## 参考リンク
 
