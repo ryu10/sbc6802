@@ -42,7 +42,7 @@ SBC-Bus 2.0 の標準ピンアサインから 1 か所だけ変更がありま�
 
 ## SBC6800 用ソフトウェアの使用
 
-SBC6802 のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug.hex をそのまま ROM に書き込めば動作します。未検証ですが、データパック内のその他のソフトウェアもほぼすべて使用可能だと思います。
+SBC6802 のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug.hex をそのまま ROM に書き込めば動作します。未検証ですが、データパック内の他のソフトウェアもほぼすべて使用可能だと思います。
 
 ## 参考リンク
 
