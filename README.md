@@ -5,21 +5,23 @@ Rev. 1.0
 
 ![board1](graphics/sbc6802board1a.png)
 
-A single board computer with Motorola 6802. Compatible with SBC-Bus 2.0.
+A Motorola 6802 single board computer. Compatible with SBC-Bus 2.0.
 The board design is derived from SBC6800 and SBC6809.
 
 ## Features
 
-* MC6802 1MHz (Internal RAM disabled)
+* MC6802 1MHz
 * RAM 32KB (0x0000 - 0x7fff)
-* ROM 16KB (0xc000 - 0xffff x ２ banks, selectable using JP1)
+* ROM 16KB (0xc000 - 0xffff x two banks, selectable using JP1)
 * ACIA (0x8018/0x8019)
+* SBC-Bus 2.0 Connector
+ 
+This board is currently in beta development. Information in this repository is not final and may contain errors.
 
-This board is currently in beta development. Information in this repository is incomplete.
-
-## In This Repository 
+## In This Repository
 
 Some important files:
+
 * [Schematic](sbc6802_sch.pdf)
 * [Gerber](sbc6802_gerber_osh.zip)
 * [BOM](sbc6802_BOM.pdf)
@@ -28,7 +30,7 @@ Some important files:
 
 The SBC-Bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
-If not using SBC-Bus, connect the 5V/GND/Res pins to a separate power source.
+If not using SBC-Bus, connect the 5V and GND pins to a separate power source.
 
 ## Software
 
