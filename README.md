@@ -1,6 +1,7 @@
 # SBC6802 plus Bus
 
 [Ja](READMEj.md) | En
+
 Rev. 1.0
 
 ![board1](graphics/sbc6802board1a.png)
