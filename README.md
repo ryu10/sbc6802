@@ -6,7 +6,7 @@ Rev. 1.0
 
 ![board1](graphics/sbc6802board12a.png)
 
-A Motorola 6802 single board computer. Compatible with SBC-Bus 2.0.
+A single board computer with Motorola 6802. Compatible with SBC-Bus 2.0.
 The board design is derived from SBC6800 and SBC6809.
 
 ## Features
