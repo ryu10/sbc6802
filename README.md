@@ -17,6 +17,8 @@ The board design is derived from SBC6800 and SBC6809.
 * ACIA (0x8018/0x8019)
 * SBC-Bus 2.0 Connector
 
+The actual board is tested with MC68B02 / MC68B50. MC6800 (the 1MHz version of the processor) has not been tested at this moment.
+
 ## In This Repository
 
 Some important files:
@@ -29,7 +31,7 @@ Some important files:
 
 The bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
-If not using SBC-Bus, connect the 5V and GND pins to a separate power source.
+If not using the SBC-Bus, connect the 5V and GND pins to a separate power source.
 
 ## Software
 
@@ -39,9 +41,9 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 ### Rev. 1
 
-* The front silk for D1 shows wrong polarity. Connect the kathode wire on the left side.
-* The case for Y1 should be kept high so that it would not interfere with D1 and other parts nearby.
-* The input pins of unused gates in U2 are not grounded. Connect pins #9, #11 and #13 to the ground.
+* The front silk for D1 shows wrong polarity. Connect the kathode to the left pad of footprint D1.
+* The crystal Y1 should be slightly raised from the PCB so that it would not interfere with D1 and other parts nearby.
+* The input pins of unused gates in U2 are not grounded. Wire pins #9, #11 and #13 to the ground.
 
 ## References
 
