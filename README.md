@@ -2,7 +2,7 @@
 
 [Ja](READMEj.md) | En
 
-Rev. 1.0
+Rev. 1
 
 ![board1](graphics/sbc6802board12a.png)
 
@@ -16,8 +16,6 @@ The board design is derived from SBC6800 and SBC6809.
 * ROM 16KB (0xc000 - 0xffff x two banks, selectable using JP1)
 * ACIA (0x8018/0x8019)
 * SBC-Bus 2.0 Connector
- 
-This board is currently in beta development. Information in this repository is not final and may contain errors.
 
 ## In This Repository
 
@@ -29,13 +27,21 @@ Some important files:
 
 ## SBC-Bus
 
-The SBC-Bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
+The bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
 If not using SBC-Bus, connect the 5V and GND pins to a separate power source.
 
 ## Software
 
-Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802. It is verified that Mikbug.hex in SBC6800 datapack runs on SBC6802.
+Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802.
+
+## Errata
+
+### Rev. 1
+
+* The front silk for D1 shows wrong polarity. Connect the kathode wire on the left side.
+* The case for Y1 should be kept high so that it would not interfere with D1 and other parts nearby.
+* The input pins of unused gates in U2 are not grounded. Connect pins #9, #11 and #13 to the ground.
 
 ## References
 

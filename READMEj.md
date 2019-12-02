@@ -2,13 +2,11 @@
 
 Ja | [En](README.md)
 
-Rev. 1.0
+Rev. 1
 
 ![board1](graphics/sbc6802board12a.png)
 
 モトローラ 6802 を使用したシングルボードコンピュータです。SBC6800/SBC6809（@vintagechips 様設計）からの派生です。SBC-Bus 2.0（@tomi9tw 様設計）対応のコネクタを装備しています。
-
-現在製作テスト中のコンピュータですので、本リポジトリには不完全な情報が多々含まれると思います。内容は随時追加修正する予定です。
 
 ## 搭載機能
 
@@ -38,12 +36,22 @@ SBC-Bus 2.0 の標準ピンアサインから 1 か所だけ変更がありま�
 
 ご利用の SBC-Bus システムのアサインと競合する場合はパターンカットしてください。
 
-SBC6802 plus Bus ボードの電源供給とリセットボタンは SBC-Bus からのものを利用します。SBC-Bus へ接続しない場合は、ボード下部のコネクタ端子から +5V、GND、Res*（リセット）などを取り出して配線してください。端子名はボード裏面のシルクに印刷されています。
+SBC6802 plus Bus ボードの電源とリセットボタンは SBC-Bus に依存します。SBC-Bus へ接続しない場合は、ボード下部のコネクタ端子から +5V、GND、Res*（リセット）などを取り出して配線してください。端子名はボード裏面のシルクに印刷されています。
 
-## SBC6800 用ソフトウェアの使用
+## SBC6800 用ソフトウェア
 
-BC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug.hex をそのまま ROM に書き込めば動作します。未検証ですが、データパック内の他のソフトウェアもほぼすべて使用可能だと思います。
+SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる Mikbug と VTLSA の動作を確認しています。未検証ですがデータパック内の他のソフトウェアも使用可能だと思います。
 
+![mikbug-vtlsa](graphics/mikbug-vtlsa.png)
+
+## ボードエラッタ
+
+### Rev. 1
+
+* ダイオード D1 シルク印刷の極性が逆です。実際の部品は基板表から見て左側がカソードになるように取り付けてください。
+* クリスタル Y1 が周囲の部品と干渉します。クリスタルのリード線をやや長めに取りケースを適度に浮かせてください。
+* U2（LS04）未使用ゲートの入力が接地されていません。9、11、13 ピンを GND に接続してください。
+  
 ## 参考リンク
 
 * [SBC6800](https://www.switch-science.com/catalog/3581/)
@@ -51,4 +59,3 @@ BC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です�
 * [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html)
 * [as0 Motorola 6800 Assembler](https://github.com/JimInCA/motorola-6800-assembler)
 * [M6800 Assembly VSCode Extension](https://marketplace.visualstudio.com/items?itemName=RyuStudio.m6800-as0)
-
