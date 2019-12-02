@@ -198,7 +198,7 @@ U 1 1 5DCF9140
 P 7900 5800
 F 0 "J2" H 7980 5792 50  0000 L CNN
 F 1 "Conn_01x06" H 7980 5701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 7900 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7900 5800 50  0001 C CNN
 F 3 "~" H 7900 5800 50  0001 C CNN
 	1    7900 5800
 	1    0    0    -1  
@@ -1605,9 +1605,64 @@ F 3 "~" H 1050 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8150 7650 0    50   ~ 0
-Nov 14 2019\n
+Dec 1, 2019\n
 Text Notes 10600 7650 0    50   ~ 0
-1.0
+2
 Text Notes 7050 7050 0    50   ~ 0
 SBC6802 with SBC Bus Connector \n2019 RyuStudio\n* Derived from SBC6800/SBC6809 (c) 2017-2018 Tetsuya Suzuki\nCC-BY-SA 3.0
+$Comp
+L 74xx:74LS04 U2
+U 4 1 5DE57A1F
+P 6300 5150
+F 0 "U2" H 6300 5467 50  0000 C CNN
+F 1 "74LS04" H 6300 5376 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6300 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6300 5150 50  0001 C CNN
+	4    6300 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 5 1 5DE5944B
+P 6300 5650
+F 0 "U2" H 6300 5967 50  0000 C CNN
+F 1 "74LS04" H 6300 5876 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6300 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6300 5650 50  0001 C CNN
+	5    6300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 6 1 5DE5C026
+P 6300 6150
+F 0 "U2" H 6300 6467 50  0000 C CNN
+F 1 "74LS04" H 6300 6376 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 6300 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6300 6150 50  0001 C CNN
+	6    6300 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5150 6000 5650
+Connection ~ 6000 5650
+Wire Wire Line
+	6000 5650 6000 6150
+Connection ~ 6000 6150
+Wire Wire Line
+	6000 6150 6000 6400
+$Comp
+L power:GND #PWR041
+U 1 1 5DE6E439
+P 6000 6400
+F 0 "#PWR041" H 6000 6150 50  0001 C CNN
+F 1 "GND" H 6005 6227 50  0000 C CNN
+F 2 "" H 6000 6400 50  0001 C CNN
+F 3 "" H 6000 6400 50  0001 C CNN
+	1    6000 6400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6600 5150
+NoConn ~ 6600 5650
+NoConn ~ 6600 6150
 $EndSCHEMATC
