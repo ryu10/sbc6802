@@ -2,12 +2,11 @@
 
 [Ja](READMEj.md) | En
 
-Rev. 1
+Rev. 2
 
-![board1](graphics/sbc6802board12a.png)
+![boardr2](graphics/sbc6802r2board12a.png)
 
-A single board computer with Motorola 6802. Compatible with SBC-Bus 2.0.
-The board design is derived from SBC6800 and SBC6809.
+A single board computer with Motorola 6802. The board design is derived from SBC6800 and SBC6809.
 
 ## Features
 
@@ -17,19 +16,19 @@ The board design is derived from SBC6800 and SBC6809.
 * ACIA (0x8018/0x8019)
 * SBC-Bus 2.0 Connector
 
-The actual board is tested with MC68B02 / MC68B50. MC6800 (the 1MHz version of the processor) has not been tested at this moment.
+The actual board is tested with MC68B02 / MC68B50. MC6800 (1MHz version) has not been tested at this moment.
 
 ## In This Repository
 
 Some important files:
 
 * [Schematic](sbc6802_sch.pdf)
-* [Gerber](sbc6802_gerber_osh.zip)
+* [Gerber](sbc6802_gerber_r2.zip)
 * [BOM](sbc6802_BOM.pdf)
 
 ## SBC-Bus
 
-The bus connector supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
+The bus connector J1 supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
 If not using the SBC-Bus, connect the 5V and GND pins to a separate power source.
 
@@ -38,6 +37,10 @@ If not using the SBC-Bus, connect the 5V and GND pins to a separate power source
 Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802.
 
 ## Errata
+
+### Rev. 2
+
+* Resolved Rev. 1 errata.
 
 ### Rev. 1
 

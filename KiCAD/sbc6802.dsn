@@ -53,7 +53,7 @@
     (component Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
       (place C2 136565 -66675 front 0 (PN 22p))
       (place C10 177165 -76835 front 180 (PN 0.1u))
-      (place C12 183515 -107315 front 0 (PN 0.1u))
+      (place C12 182285 -107315 front 0 (PN 0.1u))
       (place C4 108585 -91400 front 90 (PN 0.1u))
       (place C7 144145 -75565 front 180 (PN 0.1u))
     )
@@ -90,16 +90,16 @@
       (place U6 170180 -80645 front 0 (PN "71256 32KB SRAM"))
     )
     (component "Package_DIP:DIP-8_W7.62mm"
-      (place U7 191135 -111125 front 0 (PN "PIC12F1822-IP"))
+      (place U7 189865 -111125 front 0 (PN "PIC12F1822-IP"))
     )
     (component "Package_DIP:DIP-24_W15.24mm"
-      (place U8 183515 -75565 front 0 (PN MC6850))
+      (place U8 182245 -75565 front 0 (PN MC6850))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
       (place Y1 131445 -66040 front 270 (PN 4MHz))
     )
     (component Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm::1
-      (place C11 191135 -107315 front 0 (PN 0.1u))
+      (place C11 189865 -107315 front 0 (PN 0.1u))
       (place C3 136565 -69850 front 0 (PN 22p))
       (place C5 152400 -66040 front 270 (PN 0.1u))
       (place C8 144145 -98425 front 180 (PN 0.1u))
