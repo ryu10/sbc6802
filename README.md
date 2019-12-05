@@ -50,3 +50,8 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 * [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html)
 * [as0 Motorola 6800 Assembler](https://github.com/JimInCA/motorola-6800-assembler)
 * [M6800 Assembly VSCode Extension](https://marketplace.visualstudio.com/items?itemName=RyuStudio.m6800-as0)
+
+## License
+
+CC-BY-SA 3.0
+\* Derived from the original design of SBC6800/SBC6809 (c) 2017-2018 Tetsuya Suzuki
