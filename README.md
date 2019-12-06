@@ -41,7 +41,7 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 * The front silk for D1 shows wrong polarity. Connect the kathode wire on the left side.
 * The case for Y1 should be kept high so that it would not interfere with D1 and other parts nearby.
-* The input pins of unused gates in U2 are not grounded. Connect pins #9, #11 and #13 to the ground.
+* The input pins of unused gates of U2 are not grounded. Connect pins #9, #11 and #13 to the ground.
 
 ## References
 
