@@ -18,21 +18,19 @@ Rev. 2
 * ACIA MC6850（0x8018/0x8019）
 * SBC-Bus 2.0 コネクタ
 
-なお本ボードはオリジナル MC6802 搭載を前提に 1MHz クロックで設計していますが、実際には MC68B02 と MC68B50 を使用して動作確認しています。
-
 ## 主なファイル
 
 リポジトリに含まれる主要なファイルは次の通りです。
 
-* [回路図](sbc6802_sch.pdf)
+* [回路図](sbc6802_r2_sch.pdf)
 * [Gerber](sbc6802_gerber_r2.zip)
-* [部品表](sbc6802_BOM.pdf)
+* [部品表](sbc6802_r2_BOM.pdf)
 
 これ以外に、KiCAD プロジェクトがリポジトリに入っています。
 
 ## SBC-Bus
 
-SBC-Bus 2.0 の標準ピンアサインから 1 か所だけ変更があります。
+SBC-Bus 2.0 の標準ピンアサインから 1 か所変更があります。
 
 * Pin 38: VMA（標準アサインは NC）
 
@@ -46,18 +44,6 @@ SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です
 
 ![mikbug-vtlsa](graphics/mikbug-vtlsa.png)
 
-## ボードエラッタ
-
-### Rev. 2
-
-* Rev. 1 エラッタはすべて解消済みです。
-
-### Rev. 1
-
-* ダイオード D1 シルク印刷の極性が逆です。実際の部品は基板表から見て左側がカソードになるように取り付けてください。
-* クリスタル Y1 が周囲の部品と干渉します。リード線をやや長めに取りクリスタルのケースを適度に浮かせてください。
-* U2（LS04）未使用ゲートの入力が接地されていません。9、11、13 ピンを GND に接続してください。
-
 ## 参考リンク
 
 * [SBC6800](https://www.switch-science.com/catalog/3581/)
@@ -65,3 +51,9 @@ SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です
 * [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html)
 * [as0 Motorola 6800 Assembler](https://github.com/JimInCA/motorola-6800-assembler)
 * [M6800 Assembly VSCode Extension](https://marketplace.visualstudio.com/items?itemName=RyuStudio.m6800-as0)
+
+## ライセンス
+
+CC-BY-SA 3.0 ryu10/RyuStudio 2019.
+本制作物は以下の制作物からの派生です。
+SBC6800 and SBC6809 by Tetsuya Suzuki 2017-2018.

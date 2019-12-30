@@ -16,37 +16,23 @@ A single board computer with Motorola 6802. The board design is derived from SBC
 * ACIA (0x8018/0x8019)
 * SBC-Bus 2.0 Connector
 
-The actual board is tested with MC68B02 / MC68B50. MC6800 (1MHz version) has not been tested at this moment.
-
 ## In This Repository
 
-Some important files:
+The following files are included, along with the KiCAD project:
 
-* [Schematic](sbc6802_sch.pdf)
+* [Schematic](sbc6802_r2_sch.pdf)
 * [Gerber](sbc6802_gerber_r2.zip)
-* [BOM](sbc6802_BOM.pdf)
+* [BOM](sbc6802_r2_BOM.pdf)
 
 ## SBC-Bus
 
 The bus connector J1 supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
-If not using the SBC-Bus, connect the 5V and GND pins to a separate power source.
+If not using the SBC-Bus, connect the 5V and GND pins to a power supply.
 
 ## Software
 
 Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip) are compatible with SBC6802.
-
-## Errata
-
-### Rev. 2
-
-* Resolved Rev. 1 errata.
-
-### Rev. 1
-
-* The front silk for D1 shows wrong polarity. Connect the kathode to the left pad of footprint D1.
-* The crystal Y1 should be slightly raised from the PCB so that it would not interfere with D1 and other parts nearby.
-* The input pins of unused gates in U2 are not grounded. Wire pins #9, #11 and #13 to the ground.
 
 ## References
 
@@ -55,3 +41,8 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 * [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html)
 * [as0 Motorola 6800 Assembler](https://github.com/JimInCA/motorola-6800-assembler)
 * [M6800 Assembly VSCode Extension](https://marketplace.visualstudio.com/items?itemName=RyuStudio.m6800-as0)
+
+## License
+
+CC-BY-SA 3.0 by ryu10/RyuStudio 2019.
+Derived from the original works of SBC6800 and SBC6809 by Tetsuya Suzuki 2017-2018.

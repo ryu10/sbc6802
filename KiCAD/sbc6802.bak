@@ -198,7 +198,7 @@ U 1 1 5DCF9140
 P 7900 5800
 F 0 "J2" H 7980 5792 50  0000 L CNN
 F 1 "Conn_01x06" H 7980 5701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 7900 5800 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 7900 5800 50  0001 C CNN
 F 3 "~" H 7900 5800 50  0001 C CNN
 	1    7900 5800
 	1    0    0    -1  
@@ -1573,26 +1573,8 @@ F 3 "~" H 1050 3750 50  0001 C CNN
 	1    1050 3750
 	1    0    0    -1  
 $EndComp
-$Comp
-L pspice:DIODE D1
-U 1 1 5E73D19A
-P 800 3400
-F 0 "D1" V 1200 3500 50  0000 R CNN
-F 1 "DIODE" V 1100 3500 50  0000 R CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 800 3400 50  0001 C CNN
-F 3 "~" H 800 3400 50  0001 C CNN
-	1    800  3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1050 3100 1050 3200
-Wire Wire Line
-	800  3200 1050 3200
 Wire Wire Line
 	800  3600 1050 3600
-Connection ~ 1050 3200
-Wire Wire Line
-	1050 3200 1050 3300
 $Comp
 L Device:R R1
 U 1 1 5DCF9A2E
@@ -1605,7 +1587,7 @@ F 3 "~" H 1050 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 8150 7650 0    50   ~ 0
-Dec 1, 2019\n
+Dec 29, 2019\n
 Text Notes 10600 7650 0    50   ~ 0
 2
 Text Notes 7050 7050 0    50   ~ 0
@@ -1665,4 +1647,20 @@ $EndComp
 NoConn ~ 6600 5150
 NoConn ~ 6600 5650
 NoConn ~ 6600 6150
+$Comp
+L Device:D D1
+U 1 1 5E0A982D
+P 800 3450
+F 0 "D1" V 754 3529 50  0000 L CNN
+F 1 "D" V 845 3529 50  0000 L CNN
+F 2 "Diode_THT:D_5KPW_P12.70mm_Horizontal" H 800 3450 50  0001 C CNN
+F 3 "~" H 800 3450 50  0001 C CNN
+	1    800  3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 3100 1050 3300
+Wire Wire Line
+	1050 3300 800  3300
+Connection ~ 1050 3300
 $EndSCHEMATC

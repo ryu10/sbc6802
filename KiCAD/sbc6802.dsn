@@ -33,25 +33,25 @@
     )
   )
   (placement
+    (component qr:qr_github_sbc6802_r2
+      (place logo1 187071 -127635 back 0 (PN LOGO))
+    )
     (component MountingHole:MountingHole_3.2mm_M3
-      (place mh4 109775 -67230 front 0 (PN MountingHole_3.2mm_M3))
-      (place mh2 198700 -132795 front 0 (PN MountingHole_3.2mm_M3))
+      (place mh4 109775 -67230 front 0 (PN M3))
+      (place mh2 198175 -132795 front 0 (PN M3))
     )
     (component MountingHole:MountingHole_3.2mm_M3::1
-      (place mh3 109775 -132795 front 0 (PN MountingHole_3.2mm_M3))
-      (place mh1 198700 -67230 front 0 (PN MountingHole_3.2mm_M3))
+      (place mh3 109775 -132795 front 0 (PN M3))
+      (place mh1 198175 -67230 front 0 (PN M3))
     )
     (component Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical
       (place J2 191770 -69215 front 270 (PN Conn_01x06))
-    )
-    (component "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-      (place D1 131445 -75565 front 0 (PN DIODE))
     )
     (component Capacitor_THT:CP_Radial_Tantal_D4.5mm_P2.50mm
       (place C1 125730 -67310 front 180 (PN 10u))
     )
     (component Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm
-      (place C2 136565 -66675 front 0 (PN 22p))
+      (place C2 135509 -65913 front 0 (PN 22p))
       (place C10 177165 -76835 front 180 (PN 0.1u))
       (place C12 182285 -107315 front 0 (PN 0.1u))
       (place C4 108585 -91400 front 90 (PN 0.1u))
@@ -96,11 +96,11 @@
       (place U8 182245 -75565 front 0 (PN MC6850))
     )
     (component Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal
-      (place Y1 131445 -66040 front 270 (PN 4MHz))
+      (place Y1 131445 -65913 front 270 (PN 4MHz))
     )
     (component Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm::1
       (place C11 189865 -107315 front 0 (PN 0.1u))
-      (place C3 136565 -69850 front 0 (PN 22p))
+      (place C3 135509 -70866 front 0 (PN 22p))
       (place C5 152400 -66040 front 270 (PN 0.1u))
       (place C8 144145 -98425 front 180 (PN 0.1u))
       (place C9 163830 -76835 front 180 (PN 0.1u))
@@ -108,8 +108,13 @@
     (component Capacitor_THT:CP_Radial_Tantal_D4.5mm_P2.50mm::1
       (place C6 117475 -125730 front 270 (PN 100u))
     )
+    (component "Diode_THT:D_A-405_P7.62mm_Horizontal"
+      (place D1 131445 -75565 front 0 (PN D))
+    )
   )
   (library
+    (image qr:qr_github_sbc6802_r2
+    )
     (image MountingHole:MountingHole_3.2mm_M3
       (outline (path signal 150  3200 0  3119.77 -712.067  2883.1 -1388.43  2501.86 -1995.17
             1995.17 -2501.86  1388.43 -2883.1  712.067 -3119.77  0 -3200
@@ -170,32 +175,6 @@
       (pin Oval[A]Pad_1700x1700_um 3 0 -5080)
       (pin Oval[A]Pad_1700x1700_um 2 0 -2540)
       (pin Rect[A]Pad_1700x1700_um 1 0 0)
-    )
-    (image "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
-      (outline (path signal 50  8670 1250  -1050 1250))
-      (outline (path signal 50  8670 -1250  8670 1250))
-      (outline (path signal 50  -1050 -1250  8670 -1250))
-      (outline (path signal 50  -1050 1250  -1050 -1250))
-      (outline (path signal 120  2290 1120  2290 -1120))
-      (outline (path signal 120  2530 1120  2530 -1120))
-      (outline (path signal 120  2410 1120  2410 -1120))
-      (outline (path signal 120  6580 0  5930 0))
-      (outline (path signal 120  1040 0  1690 0))
-      (outline (path signal 120  5930 1120  1690 1120))
-      (outline (path signal 120  5930 -1120  5930 1120))
-      (outline (path signal 120  1690 -1120  5930 -1120))
-      (outline (path signal 120  1690 1120  1690 -1120))
-      (outline (path signal 100  2310 1000  2310 -1000))
-      (outline (path signal 100  2510 1000  2510 -1000))
-      (outline (path signal 100  2410 1000  2410 -1000))
-      (outline (path signal 100  7620 0  5810 0))
-      (outline (path signal 100  0 0  1810 0))
-      (outline (path signal 100  5810 1000  1810 1000))
-      (outline (path signal 100  5810 -1000  5810 1000))
-      (outline (path signal 100  1810 -1000  5810 -1000))
-      (outline (path signal 100  1810 1000  1810 -1000))
-      (pin Oval[A]Pad_1600x1600_um 2 7620 0)
-      (pin Rect[A]Pad_1600x1600_um 1 0 0)
     )
     (image Capacitor_THT:CP_Radial_Tantal_D4.5mm_P2.50mm
       (outline (path signal 120  -1062.29 1560  -1062.29 1110))
@@ -709,6 +688,32 @@
       (pin Rect[A]Pad_1600x1600_um 1 0 0)
       (pin Round[A]Pad_1600_um 2 2500 0)
     )
+    (image "Diode_THT:D_A-405_P7.62mm_Horizontal"
+      (outline (path signal 100  1210 1350  1210 -1350))
+      (outline (path signal 100  1210 -1350  6410 -1350))
+      (outline (path signal 100  6410 -1350  6410 1350))
+      (outline (path signal 100  6410 1350  1210 1350))
+      (outline (path signal 100  0 0  1210 0))
+      (outline (path signal 100  7620 0  6410 0))
+      (outline (path signal 100  1990 1350  1990 -1350))
+      (outline (path signal 100  2090 1350  2090 -1350))
+      (outline (path signal 100  1890 1350  1890 -1350))
+      (outline (path signal 120  1090 1140  1090 1470))
+      (outline (path signal 120  1090 1470  6530 1470))
+      (outline (path signal 120  6530 1470  6530 1140))
+      (outline (path signal 120  1090 -1140  1090 -1470))
+      (outline (path signal 120  1090 -1470  6530 -1470))
+      (outline (path signal 120  6530 -1470  6530 -1140))
+      (outline (path signal 120  1990 1470  1990 -1470))
+      (outline (path signal 120  2110 1470  2110 -1470))
+      (outline (path signal 120  1870 1470  1870 -1470))
+      (outline (path signal 50  -1150 1600  -1150 -1600))
+      (outline (path signal 50  -1150 -1600  8770 -1600))
+      (outline (path signal 50  8770 -1600  8770 1600))
+      (outline (path signal 50  8770 1600  -1150 1600))
+      (pin Rect[A]Pad_1800x1800_um 1 0 0)
+      (pin Oval[A]Pad_1800x1800_um 2 7620 0)
+    )
     (padstack Round[A]Pad_1400_um
       (shape (circle F.Cu 1400))
       (shape (circle B.Cu 1400))
@@ -734,6 +739,11 @@
       (shape (path B.Cu 1700  0 0  0 0))
       (attach off)
     )
+    (padstack Oval[A]Pad_1800x1800_um
+      (shape (path F.Cu 1800  0 0  0 0))
+      (shape (path B.Cu 1800  0 0  0 0))
+      (attach off)
+    )
     (padstack Rect[A]Pad_1600x1600_um
       (shape (rect F.Cu -800 -800 800 800))
       (shape (rect B.Cu -800 -800 800 800))
@@ -742,6 +752,11 @@
     (padstack Rect[A]Pad_1700x1700_um
       (shape (rect F.Cu -850 -850 850 850))
       (shape (rect B.Cu -850 -850 850 850))
+      (attach off)
+    )
+    (padstack Rect[A]Pad_1800x1800_um
+      (shape (rect F.Cu -900 -900 900 900))
+      (shape (rect B.Cu -900 -900 900 900))
       (attach off)
     )
     (padstack "Via[0-1]_800:400_um"
@@ -757,7 +772,7 @@
         C6-2 C7-2 C8-2 C9-2)
     )
     (net /~Res
-      (pins D1-1 C1-1 R1-2 J1-30 U1-40)
+      (pins C1-1 R1-2 J1-30 U1-40 D1-2)
     )
     (net "Net-(C2-Pad1)"
       (pins C2-1 U1-39 Y1-1)
@@ -766,8 +781,8 @@
       (pins U1-38 Y1-2 C3-1)
     )
     (net +5V
-      (pins D1-2 R1-1 R2-1 R3-1 R4-1 J1-39 U1-2 U1-3 U1-8 U1-35 U2-14 U3-14 U4-16
-        U5-27 U5-28 U6-28 U7-1 U8-12 C11-1 C10-1 C12-1 C4-1 C5-1 C6-1 C7-1 C8-1 C9-1)
+      (pins R1-1 R2-1 R3-1 R4-1 J1-39 U1-2 U1-3 U1-8 U1-35 U2-14 U3-14 U4-16 U5-27
+        U5-28 U6-28 U7-1 U8-12 C11-1 C10-1 C12-1 C4-1 C5-1 C6-1 C7-1 C8-1 C9-1 D1-1)
     )
     (net /~RD
       (pins J1-1 U3-11 U5-22 U6-22)
