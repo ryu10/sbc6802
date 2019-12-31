@@ -4,7 +4,7 @@
 
 Rev. 2
 
-![boardr2](graphics/sbc6802r2board12a.png)
+![boardr2](graphics/sbc6802r2-ab.png)
 
 A single board computer with Motorola 6802. The board design is derived from SBC6800 and SBC6809.
 
@@ -44,5 +44,5 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 ## License
 
-CC-BY-SA 3.0 by ryu10/RyuStudio 2019.
-Derived from the original works of SBC6800 and SBC6809 by Tetsuya Suzuki 2017-2018.
+CC-BY-SA 3.0 by ryu10/RyuStudio, 2019.
+Derived from the original works of SBC6800 and SBC6809 by Tetsuya Suzuki, (c) 2017-2018.

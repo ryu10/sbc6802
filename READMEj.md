@@ -4,7 +4,7 @@ Ja | [En](README.md)
 
 Rev. 2
 
-![boardr2](graphics/sbc6802r2board12a.png)
+![boardr2](graphics/sbc6802r2-ab.png)
 
 モトローラ MC68B02 を使用したシングルボードコンピュータです。SBC6800/SBC6809（@vintagechips 様設計）からの派生です。SBC-Bus 2.0（@tomi9tw 様設計）対応のコネクタを装備しています。
 
@@ -34,7 +34,7 @@ SBC-Bus 2.0 の標準ピンアサインから 1 か所変更があります。
 
 * Pin 38: VMA（標準アサインは NC）
 
-ご利用の SBC-Bus ピンアサインと競合する場合は 38 ピン付近でパターンカットしてください。
+ご利用の SBC-Bus ピンアサインと競合する場合は基板はんだ面の 38 ピン付近でパターンカットしてください。
 
 SBC6802 plus Bus ボードの電源とリセットボタンは SBC-Bus に依存します。SBC-Bus へ接続しない場合は、ボード下部のコネクタ端子から +5V、GND、Res*（リセット）などを取り出して配線してください。端子名はボード裏面のシルクに印刷されています。
 
@@ -56,4 +56,4 @@ SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です
 
 CC-BY-SA 3.0 ryu10/RyuStudio 2019.
 本制作物は以下の制作物からの派生です。
-SBC6800 and SBC6809 by Tetsuya Suzuki 2017-2018.
+SBC6800 and SBC6809 by Tetsuya Suzuki, (c) 2017-2018.
