@@ -54,6 +54,7 @@ SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です
 
 ## ライセンス
 
-CC-BY-SA 3.0 ryu10/RyuStudio 2019.
+CC-BY-SA 3.0 
+2019 ryu10/RyuStudio.
 本制作物は以下の制作物からの派生です。
 SBC6800 and SBC6809, (c) 2017-2018 Tetsuya Suzuki.
