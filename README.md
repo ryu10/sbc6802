@@ -6,7 +6,7 @@ Rev. 2
 
 ![boardr2](graphics/sbc6802r2-ab.png)
 
-A single board computer with Motorola 6802. The board design is derived from SBC6800 and SBC6809.
+An MC6802-based single board computer. The board design is derived from SBC6800 and SBC6809.
 
 ## Features
 
@@ -28,7 +28,7 @@ The following files are included, along with the KiCAD project:
 
 The bus connector J1 supports [SBC-Bus 2.0](https://store.shopping.yahoo.co.jp/orangepicoshop/pico-a-008.html). Pin 38 is routed to 6802 VMA.
 
-If not using the SBC-Bus, connect the 5V and GND pins to a power supply.
+If the board is not connected to the SBC-Bus, connect the 5V and GND pins to a +5V regulated power supply.
 
 ## Software
 
@@ -44,6 +44,6 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 ## License
 
-CC-BY-SA 3.0 
+CC-BY-SA 3.0
 2019 ryu10/RyuStudio.
 Derived from the original works of SBC6800 and SBC6809 (c) 2017-2018 Tetsuya Suzuki.
