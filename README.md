@@ -6,7 +6,7 @@ Rev. 1
 
 ![board1](graphics/sbc6802board12a.png)
 
-A single board computer with Motorola 6802. Compatible with SBC-Bus 2.0.
+A single board computer basd on Motorola 6802. Compatible with SBC-Bus 2.0.
 The board design is derived from SBC6800 and SBC6809.
 
 ## Features
@@ -39,9 +39,9 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 ### Rev. 1
 
-* The front silk for D1 shows wrong polarity. Connect the kathode wire on the left side.
-* The case for Y1 should be kept high so that it would not interfere with D1 and other parts nearby.
-* The input pins of unused gates of U2 are not grounded. Connect pins #9, #11 and #13 to the ground.
+* The front silk for D1 shows wrong polarity. Connect the cathode wire to the left pad.
+* The case of crystal Y1 should be slightly raised from the PCB so that it would not interfere with D1 and other components nearby.
+* The input pins of unused gates of U2 are floating. Wire #9, #11 and #13 pins of U2 to GND.
 
 ## References
 
