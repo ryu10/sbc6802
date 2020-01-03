@@ -14,7 +14,7 @@ Rev. 2
 
 * MPU MC6802 1MHz（内蔵 RAM 無効）
 * RAM 32KB（0x0000 - 0x7fff）
-* ROM 16KB（0xc000 - 0xffff x ２ バンク、ジャンパ JP1 で選択）
+* ROM 16KB（0xc000 - 0xffff x 2 バンク、ジャンパ JP1 で選択）
 * ACIA MC6850（0x8018/0x8019）
 * SBC-Bus 2.0 コネクタ
 
@@ -56,5 +56,5 @@ SBC6802 plus Bus のメモリおよび ACIA アドレスは SBC6800 互換です
 
 CC-BY-SA 3.0 
 2019 ryu10/RyuStudio.
-本制作物は以下の制作物からの派生です。
+本制作物は以下の設計からの派生です。
 SBC6800 and SBC6809, (c) 2017-2018 Tetsuya Suzuki.
