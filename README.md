@@ -46,4 +46,5 @@ Most of the 6800 software found in [SBC6800 datapack](http://www.amy.hi-ho.ne.jp
 
 CC-BY-SA 3.0
 2019 ryu10/RyuStudio.
+
 Derived from the original works of SBC6800 and SBC6809 (c) 2017-2018 Tetsuya Suzuki.
