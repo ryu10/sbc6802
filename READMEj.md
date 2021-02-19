@@ -28,6 +28,9 @@ Rev. 2
 
 これ以外に、KiCAD プロジェクトのディレクトリが含まれます。
 
+## PIC12F1822 のプログラミング
+
+PIC12F1822（U7）は 6850 ACIA へシリアルクロックを供給します。[SBC6800 データパック](http://www.amy.hi-ho.ne.jp/officetetsu/storage/sbc6800_datapack.zip)に含まれる osc1536.hex を利用してプログラムすると 9600 bps 通信が可能になります。
 ## SBC-Bus
 
 SBC-Bus 2.0 の標準ピンアサインから 1 か所変更があります。
